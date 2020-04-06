@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<title>Document</title>
+	<style>
+
+		    *{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				font-family: "微軟正黑體";
+				font-weight: 700;
+			
+			}
+			html,body{
+			    width: 100%;
+			    height: 100%;
+                background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+			}
+
+            .wrap{
+            	width: 100vw;
+            	height: 100vh;
+            	display:flex;
+            	justify-content: center;
+            	align-items: center;
+            }
+            .container{
+            	width: 1280px;
+            	height: 99vh;
+            	display:flex;
+            	justify-content: center;
+            	-ms-align-items: center;
+            	align-items: center;
+            	flex-wrap: wrap;
+            }
+            .item{
+            	width: 32%;	
+            	height: 10vw;
+            	display:flex;
+            	margin: 0px 30px;
+            	transition: 0.5s;
+            	box-sizing: border-box;
+            }
+            .item:hover{
+            	box-shadow: 5px 5px 8px #333;
+            	cursor: pointer;
+            	transform: translate(-5px,-5px);
+            }
+            img{
+            	width: 100%;
+            	height: 100%;	
+            	object-fit: cover; /*important*/
+     
+            }
+            .pic{
+                width: 50%;	
+              
+            }
+            .txt{
+                width: 50%;
+                padding:20px;
+                display: flex;	
+                flex-direction: column;
+                box-sizing: border-box;
+                justify-content: center;
+                word-wrap: break-word;
+                background-color: white;
+                position: relative;
+            }
+            h2{
+            	font-size: 2vh;
+            	margin-bottom: 10px;
+
+            }
+            p{
+            	font-size: 0.2vh;
+            }
+            .button{
+            	border: solid 1px #e3e3e3;
+            	text-decoration: none;
+                text-align:center;
+                width: 2.5vw;
+                height: 2vh;
+                border-radius: 15px;
+                position: absolute;
+                right: 25px;
+                margin-top: 30%;
+                color: rgb(96,55,66);
+                transition: 0.8s;
+            }
+            .button:hover:{
+            	background-color: rgb(96,55,66);
+            	color:white;
+            }
+             
+            
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="container">
+			<div class="item">
+				<div class="pic">
+					<img src="http://picsum.photos/300/300?random=10">	
+				</div>
+				<div class="txt">
+                    <h2>當中老闆大力有關</h2>
+				    <p>女士現實一身這個不太那。一時進程系列政府這位</p>
+				    <a href="# " class="button">click</a>
+				</div>
+				
+			</div>
+			<div class="item">
+				<div class="pic">
+					<img src="http://picsum.photos/300/300?random=20">	
+				</div>
+				<div class="txt">
+                    <h2>好多漫畫抓住百萬</h2>
+				    <p>階段不管要是模式人間，。常用註冊顯卡歐美大門</p>
+				    <a href="# " class="button">click</a> 
+				</div>
+				
+			</div>
+			<div class="item">
+				<div class="pic">
+					<img src="http://picsum.photos/300/300?random=30">	
+				</div>
+				<div class="txt">
+				    <h2>你說價格說著彷彿</h2>
+				    <p>男女任何適應接受還會男。宣佈請點擊得知硬盤跟</p>
+				    <a href="#" class="button">click</a>	
+				</div>
+				
+			</div>
+			<div class="item">
+				<div class="pic">
+					<img src="http://picsum.photos/300/300?random=33">	
+				</div>
+				<div class="txt">
+				    <h2>你說價格說著彷彿</h2>
+				    <p>男女任何適應接受還會男。宣佈請點擊得知硬盤跟</p>
+				    <a href="#" class="button">click</a>	
+				</div>
+				
+			</div>
+			<div class="item">
+				<div class="pic">
+					<img src="http://picsum.photos/300/300?random=32">	
+				</div>
+				<div class="txt">
+				    <h2>你說價格說著彷彿</h2>
+				    <p>男女任何適應接受還會男。宣佈請點擊得知硬盤跟</p>
+				    <a href="#" class="button">click</a>	
+				</div>
+				
+			</div>
+			<div class="item">
+				<div class="pic">
+					<img src="http://picsum.photos/300/300?random=31">	
+				</div>
+				<div class="txt">
+				    <h2>你說價格說著彷彿</h2>
+				    <p>男女任何適應接受還會男。宣佈請點擊得知硬盤跟</p>
+				    <a href="#" class="button">click</a>	
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

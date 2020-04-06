@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>layout-6(頁尾區域)</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<style>
+		    *{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				font-family: 'Roboto', sans-serif;
+				font-family: 'Oxanium', cursive;
+				font-family: 'Caladea', serif;
+				font-family: 'Trade Winds', cursive;
+				font-family: 'Odibee Sans', cursive;
+				font-family: 'Titillium Web', sans-serif;
+			
+			}
+			.main-footer{
+				padding: 150px 0px 0px;
+				background: linear-gradient(20deg,#0F2027,#203A43,#2C5364);	
+			}
+            .main-footer .container{
+       
+            	display:flex;
+            	width: 1200px;	
+            	margin:auto;
+            }
+            .footer-item{
+            	margin: 0px 20px;
+            	width: 0px;	
+            	flex-grow: 1;
+
+            }
+            .footer-subscribe{
+            	display: flex;
+            	flex-direction: column;
+            }
+            .footer-subscribe form{
+                display: flex;
+                width: 100%;
+                margin: auto 0px;
+
+            }
+            .footer-subscribe input[type="text"],.footer-subscribe input[type="submit"]{
+            	border: none;
+            	padding: 5px 10px;
+            }
+            .footer-subscribe input[type="text"]{
+            	width: 0px;
+            	flex-grow: 1
+            	
+            }
+
+            .footer-subscribe input[type="submit"]{
+            	background-color: rgb(204,84,58);
+            	font-weight: 700;
+            	color: white;
+            }
+            .copyright{
+            	width: 100%;	
+            	margin: 150px 0px;
+            	padding: 10px 0px;
+            	text-align: center;
+            	background-color: rgba(53,92,125,0.5);
+            	color: white;
+            }
+            .footer-item nav{
+            	display:flex;
+            	flex-direction: column;	
+            }
+            .footer-item nav a{
+            	padding: 5px 0px;	
+            	color: rgb(215,196,187);
+            	line-height: 1.6;
+            	text-decoration: none;
+            }
+            .footer-item h4{
+            	font-size: 24px;
+            	border-bottom: 1px solid white;
+            	margin-bottom: 0.5em;
+            	padding-bottom: 0.5em;
+            	color: white;
+            }
+
+	</style>
+</head>
+<body>
+	<div class="main-footer">
+		<div class="container">
+			<div class="footer-item">
+				<h4>關於我們</h4>
+				<nav>
+					<a href=""><i class="fa fa-angle-right"></i>公司目標</a>
+					<a href=""><i class="fa fa-angle-right"></i>公司理念</a>
+					<a href=""><i class="fa fa-angle-right"></i>公司宗旨</a>
+				</nav>
+			</div>
+			<div class="footer-item">
+				<h4>其他資訊</h4>
+				<nav>
+					<a href=""><i class="fa fa-angle-right"></i>合作廠商</a>
+					<a href=""><i class="fa fa-angle-right"></i>企業徵才</a>
+					<a href=""><i class="fa fa-angle-right"></i>內部活動</a>
+				</nav>
+			</div>
+			<div class="footer-item">
+				<h4>聯絡我們</h4>
+				<nav>
+					<a href=""><i class="fa fa-angle-right"></i>地理位置</a>
+					<a href=""><i class="fa fa-angle-right"></i>交通資訊</a>
+					<a href=""><i class="fa fa-angle-right"></i>交通APP</a>
+				</nav>
+			</div>
+			<div class="footer-item footer-subscribe">
+				<h4>訂閱電子報</h4>
+				<form action="">
+					<input type="text">
+					<input type="submit" value="訂閱">
+				</form>		
+			</div>
+		</div>
+		<div class="copyright">
+		    Copyright &copy; 2019 公司版權宣告
+
+	    </div>
+	</div>
+	
+</body>
+</html>

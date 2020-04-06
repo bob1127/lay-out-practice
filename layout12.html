@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表格</title>
+</head>
+<style>
+    *{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		font-weight: 700;
+	}
+	html,body{
+    	height: 100%;
+    	display: flex;
+    	-ms-align-items: center;
+    	align-items: center;
+    	justify-content: center;
+    	
+    }
+    body{
+    	background: linear-gradient(to right,#141e30,#243b55);
+    }
+	.table{
+		width: 800px;
+		margin: auto;
+	}
+	.table table{
+		width: 100%;
+        border: 3px double #666;
+        border-radius: 15px;
+	}
+	.table thead th:first-child{
+        border-radius: 10px 0 0 0;
+	}
+	.table thead th:last-child{
+		border-radius: 0 10px 0 0;
+	}
+	.table tbody tr:nth-child(even){
+		background-color: rgb(246,197,85);
+	}
+	.table tbody tr:nth-child(odd){
+		background-color: white;
+		color:#333;
+	}
+	.table tbody tr:hover{
+		background-color: #777;
+		color: white;
+	}
+	.table tfoot tr{
+		background-color: white;
+		color:#333;
+	}
+	.table tfoot td:first-child{
+        border-radius: 0 0 0 10px;
+	}
+	.table tfoot td:last-child{
+		border-radius: 0 0 10px 0;
+	}
+	.table tr{
+       
+	}
+	.table th{
+        border: solid 1px #666;
+        padding: 10px;  
+        background-color: rgb(0,137,167);
+        color:white;
+	}
+	.table td{
+        border: solid 1px #666;
+        padding: 10px; 
+	}
+    
+</style>
+<body>
+	<div class="table">
+		<table>
+			<thead>
+				<tr>	
+                  <th scope="col">品牌</th>
+				  <th scope="col">出產地(國家)</th>
+				  <th scope="col">排氣量</th>
+				  <th scope="col">車種</th>
+				  <th scope="col">動力</th>
+				  <th scope="col">價格</th>
+				</tr>
+				
+			</thead>
+			<tbody>
+				<tr>
+				  <td>ALL NEW MAZDA6 </td>
+				  <td>日本</td>
+				  <td>1999CC</td>
+				  <td>四門大型房車</td>
+				  <td>180匹馬力</td>
+				  <td>1,290,000</td>
+			    </tr>
+			    <tr>
+				  <td>BMW X6</td>
+				  <td>德國</td>
+				  <td>2499CC</td>
+				  <td>SUV 休旅車</td>
+				  <td>280匹馬力</td>
+				  <td>3,290,000</td>
+			    </tr>
+			    <tr>
+				  <td>AUDI TT </td>
+				  <td>德國</td>
+				  <td>2999CC</td>
+				  <td>雙門跑車</td>
+				  <td>225匹馬力</td>
+				  <td>2,294,000</td>
+			    </tr>
+			    <tr>
+				  <td>TOYOTA RAV4</td>
+				  <td>日本</td>
+				  <td>2499CC</td>
+				  <td>SUV 休旅車</td>
+				  <td>150匹馬力</td>
+				  <td>1,090,000</td>
+			    </tr>
+			    <tr>
+				  <td>TOYOTA YARIS</td>
+				  <td>日本</td>
+				  <td>1499CC</td>
+				  <td>四門小型房車</td>
+				  <td>130匹馬力</td>
+				  <td>850,000</td>
+			    </tr>
+			    <tr>
+				  <td>BENZ C300 </td>
+				  <td>德國</td>
+				  <td>2499CC</td>
+				  <td>四門中型房車</td>
+				  <td>223匹馬力</td>
+				  <td>1,890,000</td>
+			    </tr>
+				
+			</tbody>
+			<tfoot>
+				<tr>	
+                  <td>備註:</td>
+                  <td colspan="5">以上資料不得任意轉載</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+</body>
+</html>

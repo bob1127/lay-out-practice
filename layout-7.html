@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>layout-7(導覽列)</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<style>
+	    *{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-family: 'Roboto', sans-serif;
+			font-family: 'Oxanium', cursive;
+			font-family: 'Caladea', serif;
+			font-family: 'Trade Winds', cursive;
+			font-family: 'Odibee Sans', cursive;
+			font-family: 'Titillium Web', sans-serif;
+		}
+		.main-header .container{
+			display: flex;
+			padding: 20px;
+			max-width: 1200px;
+			margin:auto;
+			-ms-align-items: center;
+			align-items: center;
+			background: linear-gradient(-20deg,#FBD3E9,#BB377D);
+		}
+		.mian-header{
+
+		}
+		.logo{
+			width: 100px;
+		}
+		.main-header .logo img{
+			width: 100%;
+		}
+		.main-header .main-nav{
+			margin:auto;
+		}
+		.main-header .main-nav a{
+			color: #FFF6FD;
+			font-size: 20px;
+			font-weight: 700;
+			text-decoration: none;
+			margin:0px 30px;
+			position: relative;
+			transition:0.4s;
+			
+		}
+		.main-header .main-nav a:after{
+			content:"";
+			position: absolute;
+			left:70%;
+			right: 70%;
+			bottom: -5px;
+			border-bottom: 1px solid white;
+			transition: 0.5s;
+		}
+	
+		.main-header .main-nav a:hover:after{
+            left: 0%;
+            right: 0%;
+		}
+		.main-header .header-search{
+			display: flex;
+			
+		}
+		.main-header .header-search button{
+			border-radius: 0px 50px 50px 0px;
+			background-color: #fff;
+			border:none;
+			padding: 5px;
+		
+
+		}
+		.main-header .header-search input{
+			border: none;
+			background-color: #FFF;
+			padding: 5px 10px;
+            border-radius: 50px 0px 0px 50px;
+          
+		}
+		.main-header .header-search button:focus{
+			outline: none; 
+		}
+		.main-header .header-search input:focus{
+			outline: none; 
+		}
+	</style>
+</head>
+<body>
+	<header class="main-header">
+		<div class="container">
+			<a href="#" class="logo">
+				<img src="https://www.coca-cola.com/content/dam/brands/tw/coca-cola/image/coke-logo.png" alt="">
+			</a>
+			<nav class="main-nav">
+				<a href="#">品牌起源</a>
+				<a href="#">全球分店</a>
+				<a href="#">加盟資訊</a>
+				<a href="#">關於我們</a>
+			</nav>
+			<form action="" class="header-search">
+				<input type="search">
+				<button><i class="fa fa-search-plus"></i></button>
+			</form>
+		</div>
+	</header>
+</body>
+</html>

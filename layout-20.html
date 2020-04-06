@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .banner {
+            height: 700px;
+            background:
+            url('https://images.pexels.com/photos/1070945/pexels-photo-1070945.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center top / cover;
+            
+        }
+        .sec{
+            position: relative;
+        }
+        .sec .container{
+            width: 1200px;
+            margin: auto;
+            display: flex;
+        }
+        .sec .item{
+            padding: 50px;
+            margin-top: 70px;
+        }
+        .sec .item p{
+            line-height: 1.7;
+            margin-top: 20px;
+        }
+        .sec::after{
+            content:"";
+            display: block;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            top: 0;
+            left: 50%;
+            transform: translateY(-50%);
+            border-radius: 100%;
+            
+            box-shadow: 208px 0 0 30px white,
+                        435px 0 0 55px white,
+                        620px 0 0 5px white,
+                        780px 0 0 0 white,
+
+                        -208px 0 0 30px white,
+                        -435px 0 0 45px white,
+                        -620px 0 0 5px white,
+                        -780px 0 0 35px white,
+                        -965px 0 0 0 white,
+
+                        0 -60px 0 30px rgba(0, 0, 0, 0.7),
+                        208px -30px 0 30px rgba(0, 0, 0, 0.7),
+                        435px -50px 0 55px rgba(0, 0, 0, 0.7),
+                        620px -19px 0 5px rgba(0, 0, 0, 0.7),
+                        780px -20px 0 0 rgba(0, 0, 0, 0.7),
+
+                         -208px -40px 0 30px rgba(0, 0, 0, 0.7),
+                         -435px -34px 0 45px rgba(0, 0, 0, 0.7),
+                         -620px -58px 0 5px rgba(0, 0, 0, 0.7),
+                         -780px -18px 0 35px rgba(0, 0, 0, 0.7),
+                         -965px -68px 0 0 rgba(0, 0, 0, 0.7)
+                        
+            
+            
+            ;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+
+    </div>
+    <div class="sec">
+        <div class="container">
+            <div class="item">
+                <h2>關於我們</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellat earum minima molestias nam
+                    accusamus repudiandae delectus ullam veniam, sit iste fugit mollitia eum omnis perferendis ipsa
+                    corrupti aperiam maiores libero inventore! Ratione, dolore error. Suscipit eveniet dolor dolores!
+                    Animi cumque illum dignissimos cum sequi?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut libero officia doloremque accusamus
+                    nihil facere, ipsum earum ullam nulla eos esse nobis culpa consequuntur sapiente. Voluptate ab
+                    veniam assumenda ipsum?</p>
+            </div>
+            <div class="item">
+                <h2>關於我們</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellat earum minima molestias nam
+                    accusamus repudiandae delectus ullam veniam, sit iste fugit mollitia eum omnis perferendis ipsa
+                    corrupti aperiam maiores libero inventore! Ratione, dolore error. Suscipit eveniet dolor dolores!
+                    Animi cumque illum dignissimos cum sequi?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut libero officia doloremque accusamus
+                    nihil facere, ipsum earum ullam nulla eos esse nobis culpa consequuntur sapiente. Voluptate ab
+                    veniam assumenda ipsum?</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
